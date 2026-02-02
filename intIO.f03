@@ -23,7 +23,7 @@ contains
    ! readUnsorted
    ! Prompts the user for an input filename, validates the file,
    ! and reads integers (one per line) into a dynamically
-   ! allocated array.
+   ! allocated array
    
    subroutine readUnsorted(numbers, n)
       integer, allocatable, intent(out) :: numbers(:)
@@ -111,9 +111,9 @@ contains
    end subroutine readUnsorted
 
    ! writeSorted
-   ! Writes integers to an output file (one per line).
-   ! Default output filename is 'sortedNUM.txt'.
-   ! Prompts the user before overwriting an existing file.
+   ! Writes integers to an output file (one per line)
+   ! Default output filename is 'sortedNUM.txt'
+   ! Prompts the user before overwriting an existing file
    
    subroutine writeSorted(numbers, n)
       integer, intent(in) :: numbers(:)
