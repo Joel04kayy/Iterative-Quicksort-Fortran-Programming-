@@ -1,0 +1,18 @@
+# Compile iterative version 
+fortran -Wall stackADT.f03 intIO.f03 iqsort.f03 -o iqsort
+
+# Compile recursive version 
+gfortran -Wall intIO.f03 rqsort.f03
+
+# Run iterative version
+./iqsort
+# When prompted, type: test.txt
+# When asked to overwrite, type: Y
+
+# Run recursive version
+./a.out
+# When prompted, type: test.txt
+# When asked to overwrite, type: Y
+
+# View the sorted output
+cat sortedNUM.txt
