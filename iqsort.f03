@@ -63,7 +63,6 @@ contains
       integer :: i, j
       integer :: pivot, tmp
       integer :: mid
-      integer :: lOut, rOut
 
       if (n <= 1) then
          return
